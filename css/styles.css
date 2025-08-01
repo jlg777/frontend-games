@@ -14,3 +14,7 @@
   aspect-ratio: 15/5;
   object-fit: cover;
 }
+
+.section-intro {
+  background-color: #ff6900;
+}
