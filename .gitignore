@@ -1,0 +1,19 @@
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos temporales
+*.log
+*.tmp
+*.bak
+*.swp
+
+# Dependencias o builds (si luego usás herramientas como Node, SASS, etc)
+node_modules/
+dist/
+build/
+
+# Archivos de entorno/local
+.env
+.vscode/
+.idea/
