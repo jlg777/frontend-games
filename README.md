@@ -50,12 +50,32 @@ digitalers-games/
 
 ## 📸 Vista previa
 
-![Captura de ejemplo del carrusel](./assets/images/1024_682.jpeg)
+![Captura de ejemplo del carrusel](./assets/images/captura.png)
+
+---
+
+## ✒️ Autores
+
+**Jorge Grandía** - _Trabajo Inicial_ - [JLG777](https://github.com/jlg777)
+
+**Jorge Grandía** - _Documentación_ - [JLG777](#jlg777)
 
 ## 📄 Licencia
 
 Este proyecto está bajo la Licencia MIT. Ver [LICENSE](./LICENSE) para más información.
 
+## 🎁 Expresiones de Gratitud
+
+- Comenta a otros sobre este proyecto 📢
+- Invita una cerveza 🍺 o un café ☕ a alguien del equipo.
+- Da las gracias públicamente 🤓.
+- Dona con cripto a esta dirección:
+  - (btc) 16ApGFxMXfF8ktysSkmLBzLEJPHubtwKjp
+  - (btc-SegWit) bc1q0v8fvv3gvga02h9xspcg7npghjfyny20lavc37
+  - (Ethereum) 0x1ee2842c194c95bc54473c6b27d602fc0bfc81a9
+
 ---
 
-Desarrollado por [Tu nombre o alias] 🚀
+⌨️ con ❤️ por JLG777 😊
+
+_Copyright (c) [2025] [jlg777]_
