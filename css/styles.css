@@ -18,3 +18,28 @@
 .section-intro {
   background-color: #ff6900;
 }
+
+.section-productos-title{
+  text-align: center;
+  font-size: 2rem;
+  border-bottom: 1px solid var(--color-principal);
+  padding-bottom: 0.5rem;
+  max-width: fit-content;
+  margin: 0 auto;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.section-productos{
+  padding: 2.5rem 1rem;
+}
+
+.section-productos-cards{
+  padding: 2.5rem 1rem;
+}
+
+.section-productos-card{
+  background-color: var(--color-principal);
+  padding: 1rem;
+  border-radius: 1rem;
+  color: white;
+}
