@@ -100,8 +100,8 @@
 }
 
 /* ===== ITEMS DE CARACTERÍSTICAS ===== */
-.section-caracteristicas-item {
-}
+/*.section-caracteristicas-item {
+}*/
 
 .section-caracteristicas-item i {
   font-size: 6rem;
@@ -110,4 +110,25 @@
 
 .section-caracteristicas-item p {
   font-size: 1rem;
+}
+
+.footer-main-content {
+  padding: 1rem;
+  margin-top: 4rem;
+}
+
+.footer-social {
+  padding-left: 1rem;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+.footer-social-links i {
+  color: var(--color-claro);
+}
+.footer-social-links a {
+  text-decoration: none;
+  color: var(--color-claro);
 }
