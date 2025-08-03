@@ -1,9 +1,22 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
 :root {
   --color-principal: #ff6900;
   --color-secundario: #6c757d;
   --color-fondo: #f8f9fa;
   --color-texto: #212529;
+  --color-acento: #ff8533;
+  --color-oscuro: #1a1a1a;
+  --color-claro: #ffffff;
+  --sombra-suave: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --sombra-media: 0 8px 25px rgba(0, 0, 0, 0.15);
+  --transicion: all 0.3s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .header-nav {
@@ -15,6 +28,68 @@
   object-fit: cover;
 }
 
+.section-main {
+  margin-top: 2.5rem;
+}
+
 .section-intro {
   background-color: #ff6900;
+  margin-top: 2.5rem;
+  border-radius: 1rem;
 }
+
+.section-productos-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2rem;
+  border-bottom: 1px solid var(--color-principal);
+  padding-bottom: 0.5rem;
+  max-width: fit-content;
+  margin: 0 auto;
+}
+
+.section-productos {
+  padding: 2.5rem 1rem;
+  background-color: var(--color-oscuro);
+  margin-top: 2.5rem;
+  border-radius: 1rem;
+}
+
+.section-productos-card {
+  background-color: var(--color-principal);
+  padding: 1rem;
+  border-radius: 1rem;
+  color: white;
+  gap: 1rem;
+}
+
+.section-productos-cards {
+  padding: 2.5rem 1rem;
+  gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-caracteristicas {
+  margin-top: 2rem;
+  padding: 2.5rem 1rem;
+  border-radius: 1rem;
+  border: 1px solid var(--color-principal);
+}
+
+.section-caracteristicas-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: var(--color-principal);
+  margin-bottom: 2rem;
+  border-bottom: 3px solid var(--color-principal);
+  padding-bottom: 0.5rem;
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
