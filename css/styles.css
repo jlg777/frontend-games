@@ -60,13 +60,24 @@
 
 /* ===== SECCIÓN DE PRODUCTOS ===== */
 .section-productos-title {
-  text-align: center;
+  position: relative;
   text-transform: uppercase;
   font-size: 2rem;
-  border-bottom: 3px solid var(--color-principal);
   padding-bottom: 0.5rem;
   max-width: fit-content;
   margin: 0 auto;
+}
+
+.section-productos-title::after {
+  content: "";
+  display: block;
+  width: 140%;
+  height: 3px;
+  background: var(--color-principal);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
 }
 
 .section-productos {
@@ -102,16 +113,27 @@
 }
 
 .section-caracteristicas-title {
-  text-align: center;
+  position: relative;
   text-transform: uppercase;
   font-size: 2rem;
   color: var(--color-principal);
   margin-bottom: 2rem;
-  border-bottom: 3px solid var(--color-principal);
   padding-bottom: 0.5rem;
   max-width: fit-content;
   margin-left: auto;
   margin-right: auto;
+}
+
+.section-caracteristicas-title::after {
+  content: "";
+  display: block;
+  width: 140%;
+  height: 3px;
+  background: var(--color-principal);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
 }
 
 .section-caracteristicas-container {
@@ -129,28 +151,39 @@
   font-size: 1rem;
 }
 
-/* =========================
+/* ========================
    ESTILOS DEL FOOTER
-   ========================= */
+   ======================== */
 
-.footer-main-content {
-  padding: 1rem;
-  margin-top: 4rem;
+.footer-main {
+  background-color: var(--color-oscuro);
+  color: var(--color-claro);
+  padding-top: 2rem;
+  margin-top: 2.5rem;
 }
 
-.footer-social {
-  padding-left: 1rem;
-}
-
-.footer-social ul {
-  list-style: none;
-}
-
-.footer-social-links i {
+.footer-title {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
   color: var(--color-claro);
 }
 
-.footer-social-links a {
+.footer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-list li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-list a {
   text-decoration: none;
   color: var(--color-claro);
+}
+
+.footer-divider {
+  border-color: var(--color-secundario);
+  margin: 1rem 0;
 }
