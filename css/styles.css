@@ -59,6 +59,13 @@
   object-fit: cover;
 }
 
+.carousel-indicator-custom {
+  background-color: var(--color-oscuro) !important;
+}
+
+.carousel-indicators .active {
+  background-color: var(--color-principal) !important;
+}
 /* =========================
    ESTILOS DEL MAIN
    ========================= */
