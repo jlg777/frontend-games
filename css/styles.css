@@ -32,6 +32,22 @@
 
 .header-nav {
   background-color: var(--color-principal);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.navbar-nav .nav-link:hover {
+  text-decoration: underline;
+  color: var(--color-fondo);
+}
+
+.nav-link.active {
+  font-weight: bold;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.2rem;
 }
 
 /* =========================
@@ -43,6 +59,13 @@
   object-fit: cover;
 }
 
+.carousel-indicator-custom {
+  background-color: var(--color-oscuro) !important;
+}
+
+.carousel-indicators .active {
+  background-color: var(--color-principal) !important;
+}
 /* =========================
    ESTILOS DEL MAIN
    ========================= */
