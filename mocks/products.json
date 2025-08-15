@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "name": "Xiaomi Mi 11",
+    "image": "https://i.blogs.es/273b41/xiaomi-mi-11-00/1366_2000.jpg",
+    "category": "Smartphones",
+    "description": "Smartphone con pantalla AMOLED 6.81 pulgadas, cámara principal de 108 MP.",
+    "createdAt": "2023-08-01T12:00:00Z"
+  },
+  {
+    "id": 2,
+    "name": "Xiaomi Redmi Note 10",
+    "image": "https://example.com/images/redmi_note10.jpghttps://i01.appmifile.com/webfile/globalimg/products/pc/redmi-note-10/specs-header.png",
+    "category": "Smartphones",
+    "description": "Pantalla AMOLED de 6.43 pulgadas, procesador Snapdragon 678.",
+    "createdAt": "2023-07-21T15:30:00Z"
+  },
+  {
+    "id": 3,
+    "name": "Xiaomi Mi Band 6",
+    "image": "https://www.etercor.com.ar/wp-content/uploads/2021/07/xiaomi-pulsera-de-actividad-mi-band-6.jpg",
+    "category": "Wearables",
+    "description": "Banda inteligente con pantalla AMOLED y monitoreo de salud avanzado.",
+    "createdAt": "2023-05-10T09:00:00Z"
+  },
+  {
+    "id": 4,
+    "name": "Xiaomi Mi 10 Pro",
+    "image": "https://example.com/images/mi10pro.jpg",
+    "category": "Smartphones",
+    "description": "Smartphone de gama alta con cámara de 108 MP y carga rápida de 50W.",
+    "createdAt": "2023-06-15T14:00:00Z"
+  },
+  {
+    "id": 5,
+    "name": "Xiaomi Redmi Note 9",
+    "image": "https://example.com/images/redmi_note9.jpg",
+    "category": "Smartphones",
+    "description": "Pantalla FHD+, procesador MediaTek Helio G85, batería de 5020 mAh.",
+    "createdAt": "2023-03-02T10:30:00Z"
+  },
+  {
+    "id": 6,
+    "name": "Xiaomi Mi 11 Lite",
+    "image": "https://example.com/images/mi11lite.jpg",
+    "category": "Smartphones",
+    "description": "Smartphone ultraligero con pantalla AMOLED de 6.55 pulgadas.",
+    "createdAt": "2023-06-05T08:45:00Z"
+  },
+  {
+    "id": 7,
+    "name": "Xiaomi Mi TV Stick",
+    "image": "https://example.com/images/mi_tv_stick.jpg",
+    "category": "Accessories",
+    "description": "Dispositivo de transmisión 4K Ultra HD para ver contenido en streaming.",
+    "createdAt": "2023-04-25T16:20:00Z"
+  },
+  {
+    "id": 8,
+    "name": "Xiaomi Robot Vacuum-Mop 2",
+    "image": "https://example.com/images/robot_vacuum.jpg",
+    "category": "Home Appliances",
+    "description": "Aspiradora robotizada con función de mopa, ideal para el hogar.",
+    "createdAt": "2023-07-12T13:10:00Z"
+  },
+  {
+    "id": 9,
+    "name": "Xiaomi Mi Watch",
+    "image": "https://example.com/images/miwatch.jpg",
+    "category": "Wearables",
+    "description": "Reloj inteligente con monitorización de actividad física y sueño.",
+    "createdAt": "2023-05-20T17:30:00Z"
+  },
+  {
+    "id": 10,
+    "name": "Xiaomi Mi Electric Scooter Pro 2",
+    "image": "https://example.com/images/miscooter.jpg",
+    "category": "Electronics",
+    "description": "Patinete eléctrico con velocidad máxima de 25 km/h y autonomía de hasta 45 km.",
+    "createdAt": "2023-02-17T11:00:00Z"
+  },
+  {
+    "id": 11,
+    "name": "Xiaomi Redmi 9A",
+    "image": "https://example.com/images/redmi9a.jpg",
+    "category": "Smartphones",
+    "description": "Smartphone económico con batería de 5000 mAh y pantalla de 6.53 pulgadas.",
+    "createdAt": "2023-08-10T14:50:00Z"
+  },
+  {
+    "id": 12,
+    "name": "Xiaomi Mi Air Purifier 3H",
+    "image": "https://example.com/images/mi_air_purifier.jpg",
+    "category": "Home Appliances",
+    "description": "Purificador de aire con filtrado HEPA y control inteligente desde el móvil.",
+    "createdAt": "2023-04-02T12:00:00Z"
+  },
+  {
+    "id": 13,
+    "name": "Xiaomi Mi True Wireless Earbuds",
+    "image": "https://example.com/images/mi_earbuds.jpg",
+    "category": "Accessories",
+    "description": "Auriculares inalámbricos con cancelación de ruido y sonido de alta calidad.",
+    "createdAt": "2023-06-28T19:15:00Z"
+  },
+  {
+    "id": 14,
+    "name": "Xiaomi Mi 10T Pro",
+    "image": "https://example.com/images/mi10tpro.jpg",
+    "category": "Smartphones",
+    "description": "Smartphone con cámara de 108 MP, pantalla de 144Hz y carga rápida de 33W.",
+    "createdAt": "2023-03-15T10:00:00Z"
+  },
+  {
+    "id": 15,
+    "name": "Xiaomi Mi 9T",
+    "image": "https://example.com/images/mi9t.jpg",
+    "category": "Smartphones",
+    "description": "Smartphone con pantalla AMOLED, procesador Snapdragon 730 y cámara pop-up.",
+    "createdAt": "2023-05-03T09:40:00Z"
+  },
+  {
+    "id": 16,
+    "name": "Xiaomi Redmi Note 8",
+    "image": "https://example.com/images/redmi_note8.jpg",
+    "category": "Smartphones",
+    "description": "Pantalla FHD+ de 6.3 pulgadas, cámara cuádruple de 48 MP y batería de 4000 mAh.",
+    "createdAt": "2023-07-18T13:25:00Z"
+  },
+  {
+    "id": 17,
+    "name": "Xiaomi Mi Smart Band 5",
+    "image": "https://example.com/images/miband5.jpg",
+    "category": "Wearables",
+    "description": "Banda inteligente con pantalla AMOLED de 1.1 pulgadas, monitoreo de sueño y estrés.",
+    "createdAt": "2023-06-11T10:05:00Z"
+  },
+  {
+    "id": 18,
+    "name": "Xiaomi Mi Mix 4",
+    "image": "https://example.com/images/mix4.jpg",
+    "category": "Smartphones",
+    "description": "Smartphone con cámara bajo pantalla, procesador Snapdragon 888 y carga inalámbrica.",
+    "createdAt": "2023-05-30T11:15:00Z"
+  },
+  {
+    "id": 19,
+    "name": "Xiaomi Mi Smart Home Hub",
+    "image": "https://example.com/images/mi_home_hub.jpg",
+    "category": "Home Appliances",
+    "description": "Central inteligente para controlar dispositivos Xiaomi en tu hogar.",
+    "createdAt": "2023-04-08T16:00:00Z"
+  },
+  {
+    "id": 20,
+    "name": "Xiaomi Mi 11 Ultra",
+    "image": "https://example.com/images/mi11ultra.jpg",
+    "category": "Smartphones",
+    "description": "Smartphone con cámara de 50 MP, pantalla AMOLED de 6.81 pulgadas y carga rápida de 67W.",
+    "createdAt": "2023-07-03T09:25:00Z"
+  }
+]
