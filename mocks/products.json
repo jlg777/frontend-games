@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Xiaomi Mi 11",
-    "image": "https://example.com/images/mi11.jpg",
+    "image": "https://i.blogs.es/273b41/xiaomi-mi-11-00/1366_2000.jpg",
     "category": "Smartphones",
     "description": "Smartphone con pantalla AMOLED 6.81 pulgadas, cámara principal de 108 MP.",
     "createdAt": "2023-08-01T12:00:00Z"
@@ -10,7 +10,7 @@
   {
     "id": 2,
     "name": "Xiaomi Redmi Note 10",
-    "image": "https://example.com/images/redmi_note10.jpg",
+    "image": "https://example.com/images/redmi_note10.jpghttps://i01.appmifile.com/webfile/globalimg/products/pc/redmi-note-10/specs-header.png",
     "category": "Smartphones",
     "description": "Pantalla AMOLED de 6.43 pulgadas, procesador Snapdragon 678.",
     "createdAt": "2023-07-21T15:30:00Z"
@@ -18,7 +18,7 @@
   {
     "id": 3,
     "name": "Xiaomi Mi Band 6",
-    "image": "https://example.com/images/miband6.jpg",
+    "image": "https://www.etercor.com.ar/wp-content/uploads/2021/07/xiaomi-pulsera-de-actividad-mi-band-6.jpg",
     "category": "Wearables",
     "description": "Banda inteligente con pantalla AMOLED y monitoreo de salud avanzado.",
     "createdAt": "2023-05-10T09:00:00Z"
