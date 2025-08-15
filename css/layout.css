@@ -1,0 +1,21 @@
+html,
+body {
+  height: 100%;
+}
+
+/* Contenedor de toda la página */
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* altura mínima igual a la ventana */
+}
+
+/* El contenido crece y empuja el footer abajo */
+.contenido {
+  flex: 1;
+  padding: 2rem;
+}
+
+main.contenido {
+  height: 880px; /* Alto fijo */
+}
