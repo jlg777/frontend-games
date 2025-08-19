@@ -9,7 +9,7 @@ function formatDate(dateString) {
   return date.toLocaleDateString("es-ES");
 }
 
-//Funcion para cargar los productos
+//Función para cargar los productos
 async function loadProducts() {
   try {
     const response = await fetch("../mocks/products.json");
