@@ -26,7 +26,7 @@
   {
     "id": 4,
     "name": "Xiaomi Mi 10 Pro",
-    "image": "https://example.com/images/mi10pro.jpg",
+    "image": "https://i.blogs.es/c3597a/fdd984e3-de6e-4936-af4c-ed93e402a654/1366_2000.jpeg",
     "category": "Smartphones",
     "description": "Smartphone de gama alta con cámara de 108 MP y carga rápida de 50W.",
     "createdAt": "2023-06-15T14:00:00Z"
@@ -34,7 +34,7 @@
   {
     "id": 5,
     "name": "Xiaomi Redmi Note 9",
-    "image": "https://example.com/images/redmi_note9.jpg",
+    "image": "https://i.blogs.es/3b5b9a/redmi-note-9-colores/1366_2000.jpg",
     "category": "Smartphones",
     "description": "Pantalla FHD+, procesador MediaTek Helio G85, batería de 5020 mAh.",
     "createdAt": "2023-03-02T10:30:00Z"
@@ -42,7 +42,7 @@
   {
     "id": 6,
     "name": "Xiaomi Mi 11 Lite",
-    "image": "https://example.com/images/mi11lite.jpg",
+    "image": "https://s3-sa-east-1.amazonaws.com/saasargentina/vvQ3JKkNT9BrnRREcmPv/imagen",
     "category": "Smartphones",
     "description": "Smartphone ultraligero con pantalla AMOLED de 6.55 pulgadas.",
     "createdAt": "2023-06-05T08:45:00Z"
@@ -50,7 +50,7 @@
   {
     "id": 7,
     "name": "Xiaomi Mi TV Stick",
-    "image": "https://example.com/images/mi_tv_stick.jpg",
+    "image": "https://acdn-us.mitiendanube.com/stores/477/775/products/235y6u7jynkuo987ujklp1-45c65214806df97d3916486108437823-1024-1024.webp",
     "category": "Accessories",
     "description": "Dispositivo de transmisión 4K Ultra HD para ver contenido en streaming.",
     "createdAt": "2023-04-25T16:20:00Z"
@@ -58,7 +58,7 @@
   {
     "id": 8,
     "name": "Xiaomi Robot Vacuum-Mop 2",
-    "image": "https://example.com/images/robot_vacuum.jpg",
+    "image": "https://i01.appmifile.com/webfile/globalimg/products/pc/mi-robot-vacuum-mop-2/section04.jpg",
     "category": "Home Appliances",
     "description": "Aspiradora robotizada con función de mopa, ideal para el hogar.",
     "createdAt": "2023-07-12T13:10:00Z"
@@ -66,7 +66,7 @@
   {
     "id": 9,
     "name": "Xiaomi Mi Watch",
-    "image": "https://example.com/images/miwatch.jpg",
+    "image": "https://acdn-us.mitiendanube.com/stores/477/775/products/i67i7634erytuit8o6785457eytgh1-ce70571d5cf1565d0e16511178429813-1024-1024.webp",
     "category": "Wearables",
     "description": "Reloj inteligente con monitorización de actividad física y sueño.",
     "createdAt": "2023-05-20T17:30:00Z"
@@ -74,7 +74,7 @@
   {
     "id": 10,
     "name": "Xiaomi Mi Electric Scooter Pro 2",
-    "image": "https://example.com/images/miscooter.jpg",
+    "image": "https://images.fravega.com/f300/2b812cf07184747b2d34d1f809dabfb6.jpg.webp",
     "category": "Electronics",
     "description": "Patinete eléctrico con velocidad máxima de 25 km/h y autonomía de hasta 45 km.",
     "createdAt": "2023-02-17T11:00:00Z"
