@@ -32,20 +32,100 @@
     />
     <script src="../js/includes.js" defer></script>
     <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/admin.css" />
     <script src="../js/admin.js" defer></script>
     <title>Panel de Administración | Digitalers Xiaomi</title>
   </head>
   <body>
     <div class="layout">
+      <!--header-nav-->
       <div id="nav-placeholder"></div>
-      <main class="contenido container-xl">
+      <main class="contenido container-xxxl">
+        <h1 class="main-title text-center">ADMINISTRADOR DE PRODUCTOS</h1>
         <div class="row">
-          <h1 class="main-title">ADMINISTRADOR DE PRODUCTOS</h1>
+          <!-- Formulario de ingreso -->
           <div class="col-12 col-lg-2">
-            <table class="table table-bordered">
-              Formulario
-            </table>
+            <form id="xiaomiForm" name="name" class="xiaomiForm">
+              <div class="mb-3">
+                <label for="productName" class="form-label"
+                  >Nombre del Producto</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="productName"
+                  name="productName"
+                  required
+                  placeholder="Producto Xiaomi"
+                  spellcheck="true"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="productImage" class="form-label"
+                  >Imagen del Producto</label
+                >
+                <input
+                  type="url"
+                  class="form-control"
+                  id="productImage"
+                  name="image"
+                  required
+                  placeholder="Link de la imagen"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="productPrice" class="form-label"
+                  >Precio del Producto</label
+                >
+                <input
+                  type="number"
+                  class="form-control"
+                  id="productPrice"
+                  name="price"
+                  required
+                  placeholder="$"
+                  min="0"
+                  max="9999999"
+                  step="0.01"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="productCategory" class="form-label"
+                  >Categoria</label
+                >
+                <select
+                  class="form-select"
+                  name="category"
+                  id="productCategory"
+                  required
+                >
+                  <option disabled selected value="">
+                    Elija una categoria
+                  </option>
+                  <option value="Smartphones">Celulares</option>
+                  <option value="Wearables">Relojes Inteligentes</option>
+                  <option value="Accessories">Accesorios</option>
+                  <option value="Home Appliances">Articulos del hogar</option>
+                  <option value="Electronics">Electronica</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="productDescription" class="form-label"
+                  >Descripcion</label
+                >
+                <textarea
+                  class="form-control"
+                  id="productDescription"
+                  rows="3"
+                  name="description"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-outline-primary">
+                Agregar producto
+              </button>
+            </form>
           </div>
+          <!-- Tabla de productos -->
           <div class="col-12 col-lg-10">
             <table class="table table-hover table-bordered">
               <thead>
@@ -65,6 +145,7 @@
           </div>
         </div>
       </main>
+      <!--footer-->
       <div id="footer-placeholder"></div>
     </div>
   </body>

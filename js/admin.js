@@ -14,7 +14,7 @@ async function loadProducts() {
   try {
     const response = await fetch("../mocks/products.json");
     const products = await response.json();
-    console.log(products);
+    //console.log(products);
     const tbody = document.querySelector("tbody");
     products.forEach((product) => {
       const row = document.createElement("tr");
@@ -31,7 +31,7 @@ async function loadProducts() {
                       class="rounded"
                     />
                   </td>
-                  <td>$1.000</td>
+                  <td>${product.price}</td>
                   <td>${product.category}</td>
                   <td>
                     ${product.description}
