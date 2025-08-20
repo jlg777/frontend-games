@@ -16,7 +16,7 @@
   --color-claro: #ffffff;
   --sombra-suave: 0 4px 6px rgba(0, 0, 0, 0.1);
   --sombra-media: 0 8px 25px rgba(0, 0, 0, 0.15);
-  --transicion: all 0.3s ease;
+  --transition: all 0.3s ease;
 }
 
 [data-bs-theme="light"] {
@@ -29,7 +29,7 @@
   --color-claro: #1a1a1a;
   --sombra-suave: 0 4px 6px rgba(0, 0, 0, 0.1);
   --sombra-media: 0 8px 25px rgba(0, 0, 0, 0.15);
-  --transicion: all 0.3s ease;
+  --transition: all 0.3s ease;
 }
 
 /* Reset básico de márgenes, paddings y box-sizing */

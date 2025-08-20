@@ -21,7 +21,7 @@
 ## 📁 Estructura de carpetas
 
 ```text
-digitalers-games/
+Digitalers-games/
 │
 ├── assets/
 │ └── images/
