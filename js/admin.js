@@ -1,6 +1,11 @@
+let products = [];
+
 // Ejecutar cuando se carga el DOM
-document.addEventListener("DOMContentLoaded", () => {
-  loadProducts();
+document.addEventListener("DOMContentLoaded", async () => {
+  const products = await loadProducts();
+  if (products) {
+    generateTable(products);
+  }
 });
 
 // Función para formatear la fecha
@@ -15,10 +20,18 @@ async function loadProducts() {
     const response = await fetch("../mocks/products.json");
     const products = await response.json();
     //console.log(products);
-    const tbody = document.querySelector("tbody");
-    products.forEach((product) => {
-      const row = document.createElement("tr");
-      row.innerHTML = `
+    return products;
+  } catch (error) {
+    console.error("Error al cargar los productos", error);
+  }
+}
+
+//Función para generar tabla
+function generateTable(products) {
+  const tbody = document.querySelector("tbody");
+  products.forEach((product) => {
+    const row = document.createElement("tr");
+    row.innerHTML = `
     
                   <th scope="row">${product.id}</th>
                   <td>${product.name}</td>
@@ -46,9 +59,29 @@ async function loadProducts() {
                     </button>
                   </td>
                 `;
-      tbody.appendChild(row);
-    });
-  } catch (error) {
-    console.error("Error al cargar los productos", error);
-  }
+    tbody.appendChild(row);
+  });
 }
+
+//Función para agregar nuevos productos
+document.getElementById("xiaomiForm").addEventListener("submit", (e) => {
+  e.preventDefault();
+  const elements = e.target.elements;
+  //console.log(elements["productName"].value);
+
+  const newProduct = {
+    id: Date.now(),
+    name: elements["productName"].value,
+    image: elements["productImage"].value||"https://provialmex.com.mx/wp-content/uploads/2023/03/simbolo-de-prohibido-1024x819.webp",
+    price: elements["productPrice"].value,
+    category: elements["productCategory"].value,
+    description: elements["productDescription"].value,
+    createdAt: new Date().toISOString(),
+  };
+
+  console.log(newProduct);
+  products.push(newProduct);
+  generateTable([newProduct]);
+});
+
+//Función para eliminar productos
