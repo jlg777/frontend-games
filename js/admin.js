@@ -2,8 +2,8 @@ let products = [];
 
 // Ejecutar cuando se carga el DOM
 document.addEventListener("DOMContentLoaded", async () => {
-  const products = await loadProducts();
-  if (products) {
+  products = (await loadProducts()) || [];
+  if (products.length > 0) {
     generateTable(products);
   }
 });
@@ -29,6 +29,7 @@ async function loadProducts() {
 //Función para generar tabla
 function generateTable(products) {
   const tbody = document.querySelector("tbody");
+  tbody.innerHTML = "";
   products.forEach((product) => {
     const row = document.createElement("tr");
     row.innerHTML = `
@@ -54,7 +55,9 @@ function generateTable(products) {
                     <button type="button" class="btn btn-outline-primary">
                       <i class="bi bi-pencil"></i>
                     </button>
-                    <button type="button" class="btn btn-outline-danger">
+                    <button type="button" class="btn btn-outline-danger" onclick="deleteProducts(${
+                      product.id
+                    })">
                       <i class="bi bi-trash-fill"></i>
                     </button>
                   </td>
@@ -72,7 +75,9 @@ document.getElementById("xiaomiForm").addEventListener("submit", (e) => {
   const newProduct = {
     id: Date.now(),
     name: elements["productName"].value,
-    image: elements["productImage"].value||"https://provialmex.com.mx/wp-content/uploads/2023/03/simbolo-de-prohibido-1024x819.webp",
+    image:
+      elements["productImage"].value ||
+      "https://provialmex.com.mx/wp-content/uploads/2023/03/simbolo-de-prohibido-1024x819.webp",
     price: elements["productPrice"].value,
     category: elements["productCategory"].value,
     description: elements["productDescription"].value,
@@ -80,8 +85,35 @@ document.getElementById("xiaomiForm").addEventListener("submit", (e) => {
   };
 
   console.log(newProduct);
+  Swal.fire({
+    icon: "success",
+    title: "Carga correcta!",
+    text: "El producto se ha cargado correctamente.",
+    theme: "dark",
+  });
   products.push(newProduct);
-  generateTable([newProduct]);
+  generateTable(products);
 });
 
 //Función para eliminar productos
+function deleteProducts(id) {
+  Swal.fire({
+    title: "¿Quiere eliminar el producto?",
+    showDenyButton: true,
+    showCancelButton: true,
+    confirmButtonText: "Eliminar",
+    denyButtonText: `No eliminar`,
+  }).then((result) => {
+    /* Read more about isConfirmed, isDenied below */
+    if (result.isConfirmed) {
+      const index = products.findIndex((product) => product.id === id);
+      if (index !== -1) {
+        products.splice(index, 1);
+        generateTable(products);
+      }
+      Swal.fire("Producto Eliminado", "", "success");
+    } else if (result.isDenied) {
+      Swal.fire("Cambios no grabados", "", "info");
+    }
+  });
+}
