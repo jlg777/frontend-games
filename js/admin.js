@@ -39,9 +39,7 @@ function generateTable(products) {
                   <td>
                     <img
                       src="${product.image}"
-                      alt=""
-                      srcset=""
-                      style="width: 10rem"
+                      style="width: 10rem; height: 8rem; object-fit: cover;"
                       class="rounded"
                     />
                   </td>
@@ -55,9 +53,7 @@ function generateTable(products) {
                     <button type="button" class="btn btn-outline-primary">
                       <i class="bi bi-pencil"></i>
                     </button>
-                    <button type="button" class="btn btn-outline-danger" onclick="deleteProducts(${
-                      product.id
-                    })">
+                    <button type="button" class="btn btn-outline-danger" >
                       <i class="bi bi-trash-fill"></i>
                     </button>
                   </td>
@@ -84,7 +80,7 @@ document.getElementById("xiaomiForm").addEventListener("submit", (e) => {
     createdAt: new Date().toISOString(),
   };
 
-  console.log(newProduct);
+  //console.log(newProduct);
   Swal.fire({
     icon: "success",
     title: "Carga correcta!",
@@ -93,6 +89,7 @@ document.getElementById("xiaomiForm").addEventListener("submit", (e) => {
   });
   products.push(newProduct);
   generateTable(products);
+  e.target.reset();
 });
 
 //Función para eliminar productos
@@ -109,6 +106,7 @@ function deleteProducts(id) {
       const index = products.findIndex((product) => product.id === id);
       if (index !== -1) {
         products.splice(index, 1);
+        // Aquí también deberías eliminar la fila de la tabla en el DOM
         generateTable(products);
       }
       Swal.fire("Producto Eliminado", "", "success");
@@ -117,3 +115,32 @@ function deleteProducts(id) {
     }
   });
 }
+
+//Función para buscar el ID del producto a eliminar
+document.querySelector("tbody").addEventListener("click", (e) => {
+  if (e.target.closest(".btn-outline-danger")) {
+    const row = e.target.closest("tr");
+    const id = parseInt(row.querySelector("th").textContent);
+    deleteProducts(id);
+  }
+});
+
+//Filtros
+//Búsqueda por nombre
+document.querySelector("#searchByName").addEventListener("keyup", (e) => {
+  const inputValue = e.target.value.toLowerCase();
+  const productsFiltered = products.filter((product) => {
+    return product.name.toLowerCase().includes(inputValue);
+  });
+  generateTable(productsFiltered);
+  //console.log(inputValue);
+});
+
+//Búsqueda por categoría
+document.querySelector("#searchByCategory").addEventListener("change", (e) => {
+  const productsCategory = e.target.value;
+  productsCategory === "all"
+    ? generateTable(products)
+    : generateTable(products.filter((p) => p.category === productsCategory));
+  //console.log(productsCategory);
+});
